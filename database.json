@@ -1,0 +1,1254 @@
+{
+  "object": "database",
+  "id": "96caf129-1b47-496a-89f7-cdf17ee80bcf",
+  "cover": null,
+  "icon": {
+      "type": "emoji",
+      "emoji": "📡"
+  },
+  "created_time": "2024-07-08T15:07:00.000Z",
+  "created_by": {
+      "object": "user",
+      "id": "757722a6-5345-4071-878d-2869a6b2ad67"
+  },
+  "last_edited_by": {
+      "object": "user",
+      "id": "757722a6-5345-4071-878d-2869a6b2ad67"
+  },
+  "last_edited_time": "2024-07-09T05:02:00.000Z",
+  "title": [
+      {
+          "type": "text",
+          "text": {
+              "content": "Hardware submissions",
+              "link": null
+          },
+          "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+          },
+          "plain_text": "Hardware submissions",
+          "href": null
+      }
+  ],
+  "description": [],
+  "is_inline": false,
+  "properties": {
+      "User device subcategories": {
+          "id": "%3AQ%5Cb",
+          "name": "User device subcategories",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "9cf6c51b-86bd-48a0-b52a-a15c3eabc48c",
+                      "name": "Computer",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "621e4065-c463-492b-8c9e-f901296a8139",
+                      "name": "Laptop",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "f2daebdf-3cce-4346-b4a7-8b398b6f690d",
+                      "name": "Phone",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "189060a0-837e-4279-b55b-23a91cb0c2b3",
+                      "name": "Accessories",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "5c912a83-5a19-44fa-bc24-62a03b41ded4",
+                      "name": "Tablet",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "c51ac472-9f49-4428-8d6a-30576f160449",
+                      "name": "Other",
+                      "color": "purple",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "HAM radio subcatagories": {
+          "id": "%3B%40wb",
+          "name": "HAM radio subcatagories",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "813f2350-6d7a-4d9c-865b-fcbc2e420550",
+                      "name": "TNC",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "58ca27e8-813f-47af-9ccb-9bfff03b35f1",
+                      "name": "Base radio",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "d2e170a5-7bb9-47b2-827c-ed25c9013c15",
+                      "name": "Other",
+                      "color": "red",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Recommended by": {
+          "id": "%3BRUq",
+          "name": "Recommended by",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Tags": {
+          "id": "%3DJUA",
+          "name": "Tags",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "{`}`",
+                      "name": "Makerspace",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "NLKF",
+                      "name": "Dry",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "BrU=",
+                      "name": "Cold",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "glLn",
+                      "name": "Hot",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "mmNa",
+                      "name": "For beginners (easy install/use)",
+                      "color": "default",
+                      "description": null
+                  },
+                  {
+                      "id": "=;\\M",
+                      "name": "Wet",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "HOOA",
+                      "name": "Outdoor",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "mHjg",
+                      "name": "Indoor",
+                      "color": "default",
+                      "description": null
+                  },
+                  {
+                      "id": "}AJ`",
+                      "name": "Not for beginners (complicated install use)",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "T]MI",
+                      "name": "PtMP last mile",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "WSOB",
+                      "name": "PtMP final user",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "I?~G",
+                      "name": "Surpass obstacles",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "Yfiq",
+                      "name": "Short distances",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "vG{g",
+                      "name": "PtP",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "ZomG",
+                      "name": "Medium distances",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "Mbe\\",
+                      "name": "Long distances",
+                      "color": "brown",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Transfer velocity": {
+          "id": "%3Eh%3D%40",
+          "name": "Transfer velocity",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "V<:?",
+                      "name": "More than 1gbs",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "pwhC",
+                      "name": "Less than 1000mbs",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "vJ@T",
+                      "name": "Less than 300mbs",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "oe[d",
+                      "name": "Less than 100mbs",
+                      "color": "purple",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Security": {
+          "id": "AUdr",
+          "name": "Security",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "|BVa",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "f`o\\",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "crg`",
+                      "name": "⭐⭐⭐",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "T:AH",
+                      "name": "⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "l`tg",
+                      "name": "⭐",
+                      "color": "brown",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Power consumption": {
+          "id": "EFGh",
+          "name": "Power consumption",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "]]A:",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "AMzJ",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "kRvq",
+                      "name": "⭐⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "YnAf",
+                      "name": "⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "iIfU",
+                      "name": "⭐",
+                      "color": "default",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Robustness": {
+          "id": "IQi%3D",
+          "name": "Robustness",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "CJ~=",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "bdB>",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "?CV|",
+                      "name": "⭐⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "XX==",
+                      "name": "⭐⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "[S;N",
+                      "name": "⭐",
+                      "color": "orange",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Photo": {
+          "id": "KIc_",
+          "name": "Photo",
+          "type": "url",
+          "url": {}
+      },
+      "Reliability": {
+          "id": "OFcE",
+          "name": "Reliability",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "Vlp<",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "Jbhr",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "QH]d",
+                      "name": "⭐⭐⭐",
+                      "color": "default",
+                      "description": null
+                  },
+                  {
+                      "id": "VNjm",
+                      "name": "⭐⭐",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "tjA{",
+                      "name": "⭐",
+                      "color": "brown",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Reusbability": {
+          "id": "RViv",
+          "name": "Reusbability",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "]]A:",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "AMzJ",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "kRvq",
+                      "name": "⭐⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "YnAf",
+                      "name": "⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "iIfU",
+                      "name": "⭐",
+                      "color": "default",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "More info": {
+          "id": "S%3Exq",
+          "name": "More info",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Maintainability": {
+          "id": "SINi",
+          "name": "Maintainability",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "H?_;",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "uweN",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "iaFL",
+                      "name": "⭐⭐⭐",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "Jyh[",
+                      "name": "⭐⭐",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "=ppQ",
+                      "name": "⭐",
+                      "color": "brown",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Pros/Cons": {
+          "id": "S%60t%7C",
+          "name": "Pros/Cons",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Product website": {
+          "id": "S%7BQo",
+          "name": "Product website",
+          "type": "url",
+          "url": {}
+      },
+      "Recording equipment subcategories": {
+          "id": "UUMn",
+          "name": "Recording equipment subcategories",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "zMG`",
+                      "name": "Accessories",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "dd^G",
+                      "name": "Stands",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "lGHw",
+                      "name": "Lighting",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "}KP\\",
+                      "name": "Microphone",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "FOa~",
+                      "name": "Camera",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "4560426c-8e5f-40ba-9b40-c7c9895dca73",
+                      "name": "Other",
+                      "color": "green",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Dimensions": {
+          "id": "UoSc",
+          "name": "Dimensions",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Used by": {
+          "id": "WWgz",
+          "name": "Used by",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Server subcategories": {
+          "id": "Xf%3E_",
+          "name": "Server subcategories",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "hI:V",
+                      "name": "Single board computers",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "yVA_",
+                      "name": "Rack server",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": ";uR~",
+                      "name": "Tower server",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "gC|a",
+                      "name": "Mini computer",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "ROdn",
+                      "name": "Computer",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "de83ba73-3f92-4e66-a607-c6ac06f41e7f",
+                      "name": "Other",
+                      "color": "yellow",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Performance": {
+          "id": "ZUaM",
+          "name": "Performance",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "]]A:",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "AMzJ",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "kRvq",
+                      "name": "⭐⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "YnAf",
+                      "name": "⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "iIfU",
+                      "name": "⭐",
+                      "color": "default",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Other useful links": {
+          "id": "%5CM%7Cj",
+          "name": "Other useful links",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Network subcategories": {
+          "id": "%5EpyO",
+          "name": "Network subcategories",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "Q{PK",
+                      "name": "Router + Antenna intergrated",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "O^Kx",
+                      "name": "Power supplies",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "d>Wy",
+                      "name": "Cables and physical connectors",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "DzTh",
+                      "name": "Tower or poles",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "@:nI",
+                      "name": "Network service",
+                      "color": "default",
+                      "description": null
+                  },
+                  {
+                      "id": "wE[Z",
+                      "name": "Router",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "TW^M",
+                      "name": "Antenna",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "bfa65b44-39b3-4950-8e6c-b83fb229eff0",
+                      "name": "Other",
+                      "color": "red",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Communication bands": {
+          "id": "%60X%3BT",
+          "name": "Communication bands",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "s:uL",
+                      "name": "CDMA",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "kd|l",
+                      "name": "5G",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "JQ>O",
+                      "name": "4G",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "QPo}",
+                      "name": "3G",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "s?dt",
+                      "name": "LTE",
+                      "color": "default",
+                      "description": null
+                  },
+                  {
+                      "id": ":Fg]",
+                      "name": "GSM",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "b[al",
+                      "name": "Very high frequency",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "fHIq",
+                      "name": "High frequency",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "Hd<|",
+                      "name": "Medium frequency",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "Zwm|",
+                      "name": "Low frequency (or lower)",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "fZ~k",
+                      "name": "Bluetooth",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "QUs|",
+                      "name": "Wifi 5 Ghz",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "R{}P",
+                      "name": "Wifi 2.4 Ghz",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "ecff6617-5676-42d6-84db-e8a957d88284",
+                      "name": "Other",
+                      "color": "green",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Status": {
+          "id": "df%60g",
+          "name": "Status",
+          "type": "status",
+          "status": {
+              "options": [
+                  {
+                      "id": "f3cf270d-9de4-4a25-ab48-e53b02376a40",
+                      "name": "Submitted",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "P~Wj",
+                      "name": "Requires more info",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "213a1f34-67c9-4773-ad1b-d014d18f9125",
+                      "name": "In review",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "=v~>",
+                      "name": "Declined",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "93748153-57c7-433b-bbae-5403a2e25d0c",
+                      "name": "Approved",
+                      "color": "green",
+                      "description": null
+                  }
+              ],
+              "groups": [
+                  {
+                      "id": "36db4caf-475f-4e11-b992-14599559779f",
+                      "name": "To-do",
+                      "color": "gray",
+                      "option_ids": [
+                          "f3cf270d-9de4-4a25-ab48-e53b02376a40"
+                      ]
+                  },
+                  {
+                      "id": "05c9303c-9d6c-4c72-bf49-82702f717369",
+                      "name": "In progress",
+                      "color": "blue",
+                      "option_ids": [
+                          "P~Wj",
+                          "213a1f34-67c9-4773-ad1b-d014d18f9125"
+                      ]
+                  },
+                  {
+                      "id": "8e4e2626-e92e-433e-8a69-05c66326f646",
+                      "name": "Complete",
+                      "color": "green",
+                      "option_ids": [
+                          "=v~>",
+                          "93748153-57c7-433b-bbae-5403a2e25d0c"
+                      ]
+                  }
+              ]
+          }
+      },
+      "Manufacturer": {
+          "id": "d%7CEv",
+          "name": "Manufacturer",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Function range": {
+          "id": "emFH",
+          "name": "Function range",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "]]A:",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "AMzJ",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "kRvq",
+                      "name": "⭐⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "YnAf",
+                      "name": "⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "iIfU",
+                      "name": "⭐",
+                      "color": "default",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Description": {
+          "id": "fITW",
+          "name": "Description",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Storage subcategories": {
+          "id": "hfq~",
+          "name": "Storage subcategories",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "596b14cf-0754-4df7-a4df-8106b7982c3c",
+                      "name": "External HDD",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "9c705fbe-7c35-41d8-bd41-0bec4e76e87e",
+                      "name": "USD",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "6525e3ce-bd4a-4c4a-92aa-234f1c33e416",
+                      "name": "NAS",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "e139db22-62bc-4cf3-b118-ca889f005e55",
+                      "name": "SD Cards",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "a6494645-63dc-4256-ba49-52657cbc0769",
+                      "name": "Internal HDD",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "db877791-e493-43bb-91c1-4d9aa69374a7",
+                      "name": "Other",
+                      "color": "red",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Model": {
+          "id": "nlB%7B",
+          "name": "Model",
+          "type": "multi_select",
+          "multi_select": {
+              "options": []
+          }
+      },
+      "Price rating": {
+          "id": "o%3Bao",
+          "name": "Price rating",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "e46ef536-619b-4701-8754-e4e748878501",
+                      "name": "⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "b4e54cd9-a00b-4bba-a1b1-bc8954f79c2d",
+                      "name": "⭐⭐",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "91763d58-1cf9-4f64-8308-cf95c56b315a",
+                      "name": "⭐⭐⭐",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "c6062224-79fd-413b-b1d2-a5bbab384ffe",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "f320e72d-5e4b-47d4-9b68-2930fa155380",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Scalability": {
+          "id": "sT%5CW",
+          "name": "Scalability",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "xc~y",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "Hg\\Z",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "rbtM",
+                      "name": "⭐⭐⭐",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "C}o|",
+                      "name": "⭐⭐",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "pzGY",
+                      "name": "⭐",
+                      "color": "orange",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Price": {
+          "id": "v%5DX%3A",
+          "name": "Price",
+          "type": "rich_text",
+          "rich_text": {}
+      },
+      "Adaptability": {
+          "id": "yPl%3D",
+          "name": "Adaptability",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "gXRV",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "R[oW",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "jrk~",
+                      "name": "⭐⭐⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "p?oB",
+                      "name": "⭐⭐",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "KRmB",
+                      "name": "⭐",
+                      "color": "purple",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Configurability": {
+          "id": "zn~~",
+          "name": "Configurability",
+          "type": "select",
+          "select": {
+              "options": [
+                  {
+                      "id": "_a<D",
+                      "name": "⭐⭐⭐⭐⭐",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "gyRR",
+                      "name": "⭐⭐⭐⭐",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "Vp=m",
+                      "name": "⭐⭐⭐",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "g^H|",
+                      "name": "⭐⭐",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "uFiA",
+                      "name": "⭐",
+                      "color": "green",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Hardware categories": {
+          "id": "%7Cu%3AI",
+          "name": "Hardware categories",
+          "type": "multi_select",
+          "multi_select": {
+              "options": [
+                  {
+                      "id": "Hu@j",
+                      "name": "Other",
+                      "color": "purple",
+                      "description": null
+                  },
+                  {
+                      "id": "CRV}",
+                      "name": "Water",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "@O@Z",
+                      "name": "Manufacturing",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": ":oHn",
+                      "name": "Solar",
+                      "color": "default",
+                      "description": null
+                  },
+                  {
+                      "id": "knx>",
+                      "name": "Power",
+                      "color": "gray",
+                      "description": null
+                  },
+                  {
+                      "id": "N\\V=",
+                      "name": "Sensor",
+                      "color": "orange",
+                      "description": null
+                  },
+                  {
+                      "id": "{;ca",
+                      "name": "Recording equipment",
+                      "color": "green",
+                      "description": null
+                  },
+                  {
+                      "id": "oKYl",
+                      "name": "User device",
+                      "color": "yellow",
+                      "description": null
+                  },
+                  {
+                      "id": "MZ]V",
+                      "name": "Radio",
+                      "color": "default",
+                      "description": null
+                  },
+                  {
+                      "id": "zq|j",
+                      "name": "Server",
+                      "color": "brown",
+                      "description": null
+                  },
+                  {
+                      "id": "^apc",
+                      "name": "Storage",
+                      "color": "blue",
+                      "description": null
+                  },
+                  {
+                      "id": "P\\UY",
+                      "name": "Network",
+                      "color": "pink",
+                      "description": null
+                  },
+                  {
+                      "id": "88dff9e4-85c5-4edd-bd20-893c19befd6e",
+                      "name": "Tools",
+                      "color": "red",
+                      "description": null
+                  },
+                  {
+                      "id": "4af22b18-7b48-49b4-873a-07e1b611a00c",
+                      "name": "Construction",
+                      "color": "yellow",
+                      "description": null
+                  }
+              ]
+          }
+      },
+      "Name": {
+          "id": "title",
+          "name": "Name",
+          "type": "title",
+          "title": {}
+      }
+  },
+  "parent": {
+      "type": "page_id",
+      "page_id": "6f438e26-0586-4a77-b8a0-35cb428cb43a"
+  },
+  "url": "https://www.notion.so/96caf1291b47496a89f7cdf17ee80bcf",
+  "public_url": null,
+  "archived": false,
+  "in_trash": false,
+  "request_id": "c320e76f-6f73-4fa9-835d-79c73e88e151"
+}

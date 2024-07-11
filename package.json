@@ -1,0 +1,37 @@
+{
+  "name": "edt-submissions",
+  "version": "1.0.0",
+  "description": "Online form for new submissions to the EDT notion database.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.7",
+    "connect-history-api-fallback": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "serve-static": "^1.15.0"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makenotion/notion-sdk-js.git"
+  },
+  "author": "Jess Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makenotion/notion-sdk-js/issues"
+  },
+  "keywords": [
+    "node",
+    "notion",
+    "express"
+  ],
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

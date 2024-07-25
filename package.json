@@ -4,7 +4,7 @@
   "description": "Online form for new submissions to the EDT notion database.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.7",
@@ -32,6 +32,6 @@
     "express"
   ],
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "@flydotio/dockerfile": "^0.5.8"
   }
 }

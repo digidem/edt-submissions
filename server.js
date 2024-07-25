@@ -48,8 +48,8 @@ app.post("/pages", async function (request, response) {
     response.json({ message: "error", error })
   }
 })
-
+const port = process.env.PORT || 3000
 // listen for requests :)
-const listener = app.listen((process.env.PORT || 3000), function () {
-  console.log("Your app is listening on port " + listener.address().port)
-})
+const listener = app.listen(port, '::', () =>
+  console.log(`Listening on port ${port}`)
+)

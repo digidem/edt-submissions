@@ -19,15 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/makenotion/notion-sdk-js.git"
+    "url": "git+git@github.com:digidem/edt-submissions.git"
   },
-  "author": "Jess Mitchell",
+  "author": "Tairea",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/makenotion/notion-sdk-js/issues"
+    "url": "https://github.com/digidem/edt-submissions/issues"
   },
   "keywords": [
-    "node",
+    "earth defenders toolkit",
     "notion",
     "express"
   ],

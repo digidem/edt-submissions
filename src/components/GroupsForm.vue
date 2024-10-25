@@ -5,24 +5,24 @@
       <p class="text-h6 q-mt-md">Loading form...</p>
     </div>
     <q-form v-else-if="databaseInfo" style="width:100%" @submit="submitForm">
-      <p class="text-subtitle1 text-weight-bold">Please answer the following questions to add a new written resource to the database</p>
+      <p class="text-subtitle1 text-weight-bold">Please complete this form to add a new guardian group profile to the database</p>
       
       <template v-for="key in fieldOrder" :key="key">
         <template v-if="databaseInfo[key]">
-          <template v-if="databaseInfo[key].type === 'title' || databaseInfo[key].type === 'rich_text' || databaseInfo[key].type === 'url' || databaseInfo[key].type === 'date'">
+          <template v-if="databaseInfo[key].type === 'title' || databaseInfo[key].type === 'rich_text' || databaseInfo[key].type === 'url' || databaseInfo[key].type === 'number'">
             <q-input 
               class="q-pt-md" 
               filled 
               v-model="form[key]" 
               :label="databaseInfo[key].name" 
               :hint="getHint(key)"
-              :type="databaseInfo[key].type === 'date' ? 'date' : databaseInfo[key].type === 'rich_text' ? 'textarea' : 'text'"
+              :type="databaseInfo[key].type === 'number' ? 'number' : databaseInfo[key].type === 'rich_text' ? 'textarea' : 'text'"
               :required="databaseInfo[key].type === 'title'"
               :autogrow="databaseInfo[key].type === 'rich_text'"
             />
           </template>
           
-          <template v-else-if="databaseInfo[key].type === 'select' || databaseInfo[key].type === 'multi_select'">
+          <template v-else-if="databaseInfo[key].type === 'select' || databaseInfo[key].type === 'multi_select' || databaseInfo[key].type === 'status'">
             <q-select 
               class="q-pt-md" 
               filled 
@@ -51,38 +51,40 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { api } from 'boot/axios'
 import isEmpty from 'lodash.isempty'
 import { useQuasar } from 'quasar'
-import { languagesOptions, ratingOptions } from '../lib/sharedOptions'
+import { languagesOptions } from '../lib/sharedOptions'
 
 const $q = useQuasar()
 
 defineOptions({
-  name: 'GuidesForm'
+  name: 'GroupsFormTest'
 })
 
 const databaseInfo = ref(null)
 const form = ref({})
 const loading = ref(true)
 
-// Define the order of fields as in the original GuidesForm
+// Define the order of fields as in GroupsForm.vue
 const fieldOrder = [
-  'Name', 'Authored by (Org/Community/Individual)', 'Date of publication', 'Description',
-  'Type', 'Categories', 'Languages', 'Links', 'Easy to translate',
-  'Suggested by', 'Suggested by email', 'More info'
+  'Name', 'Description', 'type', 'Nation', 'Location', '# Members',
+  'Activities', 'Assets', 'tools', 'Resources', 'Territory support',
+  'Can show on map', 'Tags', 'Links', 'profile photo', 'Logo (url)', 'Languages'
 ]
 
 const getOptions = (field) => {
   if (field.name === 'Languages') {
     return [...languagesOptions, 'Other'];
-  } else if (field.name === 'Easy to translate') {
-    return ratingOptions;
   } else if (field.type === 'select' || field.type === 'multi_select') {
     return field.select?.options || field.multi_select?.options
       ? [...(field.select?.options || field.multi_select?.options).map(option => option.name), 'Other']
       : ['Other'];
+  } else if (field.type === 'status') {
+    return field.status?.options
+      ? field.status.options.map(option => option.name)
+      : [];
   }
   return [];
 }
@@ -94,29 +96,40 @@ const isOtherSelected = (value) => {
   return value === 'Other'
 }
 
-const getHint = (key) => {
+const getHint = (key, field) => {
   const hints = {
-    'Name': "Official title of the resource",
-    'Authored by (Org/Community/Individual)': "Name of the author, organization, or community",
-    'Date of publication': "When was this resource published?",
-    'Description': "Brief overview of the resource",
-    'Type': "Select all that apply",
-    'Categories': "Select all relevant categories",
-    'Languages': "Select all languages the resource is available in",
-    'Links': "Please add a link to the resource",
-    'Easy to translate': "Rate the ease of translation from 1 to 5 stars",
-    'Suggested by': "Name of the person suggesting this resource",
-    'Suggested by email': "Email of the person suggesting this resource",
-    'More info': "Any other relevant details about the resource"
+    Name: "Official name of the guardian group",
+    Description: "Brief overview of the group's mission and activities",
+    Links: "Website, social media, or other online presence (one per line)",
+    Assets: "Select all assets the group has access on",
+    "# Members": "Approximate count of active members",
+    Activities: "Select all major activities of the group",
+    "Can show on map": "Permission to share information with the public",
+    tools: "Select all tools utilized by the group",
+    Tags: "Select all tags that apply to the group",
+    Nation: "Select all nations or peoples the group is associated with",
+    "Territory support": "Extent of support in the territory",
+    type: "Select all that apply",
+    "profile photo": "Direct link to a representative image of the group",
+    "Logo (url)": "Direct link to the group's logo image",
+    Resources: "Select all sources of funding or support",
+    Location: "Main area of operation or headquarters (this must be a google maps location url)",
+    Languages: "Select all languages used by the group"
   }
-  return hints[key] || databaseInfo.value[key]?.description
+  return hints[key] || field.description
 }
 
 const getOtherHint = (key) => {
   const otherHints = {
-    'Type': "Specify other type(s), separate multiple with commas",
-    'Categories': "Specify other categories, separate multiple with commas",
-    'Languages': "Specify other language(s), separate multiple with commas"
+    Assets: "Specify other assets, separate multiple with commas",
+    Activities: "Specify other activities, separate multiple with commas",
+    tools: "Specify other tools, separate multiple with commas",
+    Tags: "Please add any other relevant tags, separate multiple with commas",
+    Nation: "Specify an other nation(s) or peoples, separate multiple with commas",
+    "Territory support": "Specify whether the group has full or partial territory support",
+    type: "Specify other type(s), separate multiple with commas",
+    Resources: "Specify other funding sources, separate multiple with commas",
+    Languages: "Specify other language(s), separate multiple with commas"
   }
   return otherHints[key] || `Specify other ${key.toLowerCase()}, separate multiple with commas`
 }
@@ -128,7 +141,7 @@ onMounted(async () => {
       method: 'POST',
       url: `database`,
       headers: { 'Content-Type': 'application/json' },
-      data: { database: import.meta.env.VITE_NOTION_GUIDES_DATABASE_ID}
+      data: { database: import.meta.env.VITE_NOTION_GROUPS_DATABASE_ID}
     })
     databaseInfo.value = response.data.data.properties
     console.log('Database Information:', databaseInfo.value)
@@ -151,7 +164,7 @@ const initializeForm = () => {
     if (field.type === 'multi_select') {
       initialState[key] = []
       initialState[`other${key}`] = ''
-    } else if (field.type === 'select') {
+    } else if (field.type === 'select' || field.type === 'status') {
       initialState[key] = null
       initialState[`other${key}`] = ''
     } else {
@@ -165,7 +178,6 @@ async function submitForm() {
   const properties = {}
   for (const [key, field] of Object.entries(databaseInfo.value)) {
     if (form.value[key] === null || form.value[key] === '') continue; // Skip empty fields
-
     if (field.type === 'title') {
       properties[key] = {
         title: [{ text: { content: form.value[key] } }]
@@ -174,39 +186,37 @@ async function submitForm() {
       properties[key] = {
         rich_text: [{ text: { content: form.value[key] } }]
       }
-    } else if (field.type === 'date') {
+    } else if (field.type === 'number') {
       properties[key] = {
-        date: { start: form.value[key] }
+        number: parseInt(form.value[key])
       }
     } else if (field.type === 'url') {
       properties[key] = {
         url: form.value[key]
       }
     } else if (field.type === 'select') {
-      if (form.value[key] && form.value[key] !== 'Other') {
-        properties[key] = {
-          select: { name: form.value[key] }
-        }
-      } else if (form.value[key] === 'Other' && form.value[`other${key}`]) {
-        properties[key] = {
-          select: { name: form.value[`other${key}`] }
-        }
+      properties[key] = {
+        select: { name: form.value[key] === 'Other' ? form.value[`other${key}`] : form.value[key] }
       }
     } else if (field.type === 'multi_select') {
-      const selectedOptions = form.value[key]
-        .filter(item => item !== 'Other')
-        .concat(form.value[`other${key}`] ? form.value[`other${key}`].split(',').map(item => item.trim()) : [])
-      
-      if (selectedOptions.length > 0) {
-        properties[key] = {
-          multi_select: selectedOptions.map(item => ({ name: item }))
-        }
+      properties[key] = {
+        multi_select: form.value[key]
+          .filter(item => item !== 'Other')
+          .concat(form.value[`other${key}`] ? form.value[`other${key}`].split(',').map(item => item.trim()) : [])
+          .map(item => ({ name: item }))
+      }
+    } else if (field.type === 'status') {
+      properties[key] = {
+        status: { name: form.value[key] }
       }
     }
   }
 
+  console.log('Properties:', properties)
   // Remove empty fields
   let obj = Object.fromEntries(Object.entries(properties).filter(([_, v]) => !isEmpty(v)))
+
+  console.log('Obj:', obj)
 
   try {
     const response = await api({
@@ -214,7 +224,7 @@ async function submitForm() {
       url: 'pages',
       headers: { 'Content-Type': 'application/json' },
       data: JSON.stringify({
-        databaseId: import.meta.env.VITE_NOTION_GUIDES_DATABASE_ID,
+        databaseId: import.meta.env.VITE_NOTION_GROUPS_DATABASE_ID,
         properties: { ...obj }
       })
     })
@@ -223,12 +233,12 @@ async function submitForm() {
     if (response.data && !response.data.error) {
       $q.notify({
         color: 'positive',
-        message: 'Guide form submitted successfully!',
+        message: 'Test form submitted successfully!',
         position: 'top',
       })
       initializeForm()
     } else {
-      const errorMessage = response.data.error.body || 'Submission failed!'
+      const errorMessage = response.data.error.body || 'Test submission failed!'
       $q.notify({
         color: 'negative',
         message: errorMessage,
@@ -236,10 +246,10 @@ async function submitForm() {
       })
     }
   } catch (error) {
-    console.error('Error submitting form:', error)
+    console.error('Error submitting test form:', error)
     $q.notify({
       color: 'negative',
-      message: 'Error submitting form. Please try again.',
+      message: 'Error submitting test form. Please try again.',
       position: 'top',
     })
   }

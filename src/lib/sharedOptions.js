@@ -1,4 +1,4 @@
-const languagesOptions = [
+export const languagesOptions = [
     "Afrikaans", "Albanian", "Amharic", "Arabic", "Armenian", "Assamese", "Aymara", "Azerbaijani",
     "Bambara", "Basque", "Belarusian", "Bengali", "Bhojpuri", "Bosnian", "Bulgarian", "Catalan",
     "Cebuano", "Chichewa", "Chinese", "Corsican", "Croatian", "Czech", "Danish", "Dhivehi", "Dogri",
@@ -16,5 +16,5 @@ const languagesOptions = [
     "Tigrinya", "Tsonga", "Turkish", "Turkmen", "Twi", "Ukrainian", "Urdu", "Uyghur", "Uzbek", "Vietnamese",
     "Welsh", "Xhosa", "Yiddish", "Yoruba", "Zulu"
   ];
-  
-  export default languagesOptions 
+  export const ratingOptions = ['☆', '⭐️', '⭐️⭐️', '⭐️⭐️⭐️', '⭐️⭐️⭐️⭐️', '⭐️⭐️⭐️⭐️⭐️'] 
+ 

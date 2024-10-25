@@ -19,6 +19,7 @@
 import hardwareImage from 'src/assets/hardware.jpeg'
 import softwareImage from 'src/assets/software.jpg'
 import guidesImage from 'src/assets/print.jpeg'
+import groupsImage from 'src/assets/groups.jpeg'
 import { useQuasar } from 'quasar'
 import { computed } from 'vue'
 
@@ -28,7 +29,8 @@ const data = defineModel()
 const options = [
   { label: 'Tool', value: 'tool', image: softwareImage },
   { label: 'Hardware', value: 'hardware', image: hardwareImage },
-  { label: 'Guides', value: 'guides', image: guidesImage }
+  { label: 'Guides', value: 'guides', image: guidesImage },
+  { label: 'Groups', value: 'groups', image: groupsImage }
 ]
 
 function selectOption (input) {
@@ -45,19 +47,21 @@ function backgroundImage (image) {
   if ($q.screen.gt.xs) {
     return `
       background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("${image}"); 
-      width: 200px; height: 100px; 
-      background-size: 200px 100px;
+      width: 170px; height: 100px; 
+      background-size: cover;
       border: none;
-      border-radius: 5px
+      border-radius: 5px;
+      background-position: center;
     `
   } else {
     return `
       background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url("${image}"); 
       width: 300px; height: 100px; 
-      background-size: 300px 100px; 
+      background-size: cover; 
+      background-position: center;
       border: none;
       border-radius: 10px;
-      margin-top: 10px;
+      margin-top: 20px;
     `
   }
 }

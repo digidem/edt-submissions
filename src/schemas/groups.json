@@ -1,0 +1,543 @@
+[
+    {
+        "Description": {
+            "id": "CVuJ",
+            "name": "Description",
+            "type": "rich_text",
+            "rich_text": {}
+        }
+    },
+    {
+        "Links": {
+            "id": "Cgs_",
+            "name": "Links",
+            "type": "rich_text",
+            "rich_text": {}
+        }
+    },
+    {
+        "Assets": {
+            "id": "N_VS",
+            "name": "Assets",
+            "type": "multi_select",
+            "multi_select": {
+                "options": [
+                    {
+                        "id": "fofG",
+                        "name": "Quad bike",
+                        "color": "purple",
+                        "description": null
+                    },
+                    {
+                        "id": "7ec08810-956c-4b53-beae-f9f6acc7a1e5",
+                        "name": "Base",
+                        "color": "green",
+                        "description": null
+                    },
+                    {
+                        "id": "5db67b68-84fc-465d-94c8-275c242bd5f5",
+                        "name": "Motorbikes",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "c8f79b6a-9c59-4f40-9085-f44b81f1ee04",
+                        "name": "Drone",
+                        "color": "gray",
+                        "description": null
+                    },
+                    {
+                        "id": "b6e3e332-55ea-4c6b-92e1-0cdfeb46b113",
+                        "name": "Audio sensors",
+                        "color": "blue",
+                        "description": null
+                    },
+                    {
+                        "id": "d1b10c30-b65c-4313-ae0a-b4a126dbb9d3",
+                        "name": "Fame",
+                        "color": "yellow",
+                        "description": null
+                    },
+                    {
+                        "id": "335ed4b8-6424-40f5-83bf-3dcc66da63fa",
+                        "name": "Documentaries",
+                        "color": "default",
+                        "description": null
+                    },
+                    {
+                        "id": "1e539a59-a2c1-4f0c-be6e-d14ec24884e8",
+                        "name": "Military training",
+                        "color": "orange",
+                        "description": null
+                    },
+                    {
+                        "id": "403af98a-f6a4-4be8-becf-fca2dfe3252b",
+                        "name": "Firearms",
+                        "color": "red",
+                        "description": null
+                    },
+                    {
+                        "id": "92490cbb-3c47-4c81-a49d-1e43187763d7",
+                        "name": "Legal support",
+                        "color": "brown",
+                        "description": null
+                    },
+                    {
+                        "id": "0b3f6811-2e51-4fac-92a9-ef432fc09cff",
+                        "name": "Legal Support (NGO)",
+                        "color": "default",
+                        "description": null
+                    },
+                    {
+                        "id": "ea6db458-c966-48ea-94ce-74678e22e0fd",
+                        "name": "Multi-bases",
+                        "color": "default",
+                        "description": null
+                    },
+                    {
+                        "id": "4da28793-adc1-4416-98ab-486c8c674710",
+                        "name": "Boats",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "96bbdaff-08a8-47a9-9581-264f18e45e1d",
+                        "name": "Communicators",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "179bdb60-8fbf-474b-8f0b-f7a43e31e5b2",
+                        "name": "Trucks",
+                        "color": "orange",
+                        "description": null
+                    },
+                    {
+                        "id": "54dfb849-dc31-4c6b-8ce2-db5185da9e22",
+                        "name": "Computors",
+                        "color": "gray",
+                        "description": null
+                    },
+                    {
+                        "id": "20055174-3fd6-49b1-a417-cb3f9e4339ce",
+                        "name": "Houseboats",
+                        "color": "blue",
+                        "description": null
+                    },
+                    {
+                        "id": "1959e1ce-1dbb-4c9b-89cd-07ebe45eb538",
+                        "name": "Multiple Quadbikes",
+                        "color": "pink",
+                        "description": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "# Members": {
+            "id": "P%3CU%7B",
+            "name": "# Members",
+            "type": "rich_text",
+            "rich_text": {}
+        }
+    },
+    {
+        "Activities": {
+            "id": "RF%40%5B",
+            "name": "Activities",
+            "type": "multi_select",
+            "multi_select": {
+                "options": [
+                    {
+                        "id": "JSS{",
+                        "name": "Enforcement",
+                        "color": "brown",
+                        "description": null
+                    },
+                    {
+                        "id": "E<}N",
+                        "name": "Community Support",
+                        "color": "yellow",
+                        "description": null
+                    },
+                    {
+                        "id": "\\JfO",
+                        "name": "Hunting",
+                        "color": "orange",
+                        "description": null
+                    },
+                    {
+                        "id": "~TEb",
+                        "name": "Planting",
+                        "color": "gray",
+                        "description": null
+                    },
+                    {
+                        "id": "e<]y",
+                        "name": "Monitoring",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "DaIq",
+                        "name": "Mapping",
+                        "color": "green",
+                        "description": null
+                    },
+                    {
+                        "id": "a040bc13-5263-4432-8f78-c1940bc53dae",
+                        "name": "Light enforcement",
+                        "color": "blue",
+                        "description": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Can show on map": {
+            "id": "TSSb",
+            "name": "Can show on map",
+            "type": "status",
+            "status": {
+                "options": [
+                    {
+                        "id": "470703da-3f6b-423c-b6ed-40a2113e8f75",
+                        "name": "Need to confirm",
+                        "color": "default",
+                        "description": null
+                    },
+                    {
+                        "id": "715bce5f-2b78-46d1-a7fe-352fa48e8ffb",
+                        "name": "Awaiting confirmation",
+                        "color": "blue",
+                        "description": null
+                    },
+                    {
+                        "id": "za[S",
+                        "name": "Dont share publically",
+                        "color": "red",
+                        "description": null
+                    },
+                    {
+                        "id": "38608d20-193b-49db-8a97-bdb59c100dd0",
+                        "name": "Confirmed by community",
+                        "color": "green",
+                        "description": null
+                    }
+                ],
+                "groups": [
+                    {
+                        "id": "a857ff99-1ddb-46be-88c0-753a695ff4c1",
+                        "name": "To-do",
+                        "color": "gray",
+                        "option_ids": [
+                            "470703da-3f6b-423c-b6ed-40a2113e8f75"
+                        ]
+                    },
+                    {
+                        "id": "a7e6e5d7-4c26-4583-b56f-c4675b47ee26",
+                        "name": "In progress",
+                        "color": "blue",
+                        "option_ids": [
+                            "715bce5f-2b78-46d1-a7fe-352fa48e8ffb"
+                        ]
+                    },
+                    {
+                        "id": "ea2e90e1-23d3-441a-8d15-80ecb490b162",
+                        "name": "Complete",
+                        "color": "green",
+                        "option_ids": [
+                            "za[S",
+                            "38608d20-193b-49db-8a97-bdb59c100dd0"
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "tools": {
+            "id": "Th%3DL",
+            "name": "tools",
+            "type": "multi_select",
+            "multi_select": {
+                "options": [
+                    {
+                        "id": "79f728da-1bff-4a44-b547-71786c2583ba",
+                        "name": "Libremesh",
+                        "color": "blue",
+                        "description": null
+                    },
+                    {
+                        "id": "66f3da86-bb83-4b48-8111-f7837365440d",
+                        "name": "Mapeo",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "d3d78dc9-8a8e-44cc-b85f-281f079f916f",
+                        "name": "Terrastories",
+                        "color": "red",
+                        "description": null
+                    },
+                    {
+                        "id": "530cefac-ee9d-46a2-8ab3-b23d3885f45b",
+                        "name": "Guardian connector",
+                        "color": "default",
+                        "description": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Tags": {
+            "id": "WVG~",
+            "name": "Tags",
+            "type": "multi_select",
+            "multi_select": {
+                "options": []
+            }
+        }
+    },
+    {
+        "Nation": {
+            "id": "bZKC",
+            "name": "Nation",
+            "type": "multi_select",
+            "multi_select": {
+                "options": [
+                    {
+                        "id": "a0f1456e-9b57-414e-86a3-23a41a7c96d4",
+                        "name": "Kraho",
+                        "color": "blue",
+                        "description": null
+                    },
+                    {
+                        "id": "c1cb2296-d17d-4005-877f-5c096ca02df7",
+                        "name": "Mehin",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "de314954-f501-4e27-a2d2-19efed72b5be",
+                        "name": "Guajajara",
+                        "color": "gray",
+                        "description": null
+                    },
+                    {
+                        "id": "4f9b0111-b15d-431b-a548-a24b87941bbf",
+                        "name": "Tenetehara",
+                        "color": "purple",
+                        "description": null
+                    },
+                    {
+                        "id": "2e46cb08-7672-4008-9954-9abf265ca867",
+                        "name": "Apinaye",
+                        "color": "default",
+                        "description": null
+                    },
+                    {
+                        "id": "bda61290-b894-420e-b826-14ad67cb4251",
+                        "name": "Marubo",
+                        "color": "orange",
+                        "description": null
+                    },
+                    {
+                        "id": "705f4ee6-1b1f-4b51-a406-cb7ff1be8b3c",
+                        "name": "Kanamari",
+                        "color": "green",
+                        "description": null
+                    },
+                    {
+                        "id": "947d048e-fa2b-442a-90d7-0566927e29c6",
+                        "name": "Korubo",
+                        "color": "yellow",
+                        "description": null
+                    },
+                    {
+                        "id": "5a8ae865-3e17-4f29-80c6-57cd221b3c8b",
+                        "name": "Kulina Pano",
+                        "color": "brown",
+                        "description": null
+                    },
+                    {
+                        "id": "33964ce6-e3b8-4200-adb9-34d24a342bbb",
+                        "name": "Matsēs",
+                        "color": "default",
+                        "description": null
+                    },
+                    {
+                        "id": "e4fc9083-b40e-47d0-9dfd-7333e42ab0e4",
+                        "name": "Matis",
+                        "color": "yellow",
+                        "description": null
+                    },
+                    {
+                        "id": "16b1a9bc-c67e-4404-aff6-de6214b4cde8",
+                        "name": "Tsohom-dyapa",
+                        "color": "red",
+                        "description": null
+                    },
+                    {
+                        "id": "7a66c28b-df9e-4461-adca-b4f2d22c2d04",
+                        "name": "Ka'apor",
+                        "color": "blue",
+                        "description": null
+                    },
+                    {
+                        "id": "9d7e0b73-c2d3-4ed6-86d1-64a9ef076077",
+                        "name": "Awa Guaja",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "12b7b545-0296-4035-89b4-be2637296e89",
+                        "name": "Waiwai",
+                        "color": "default",
+                        "description": null
+                    },
+                    {
+                        "id": "53433c9b-f06e-44f0-afd2-acf486e0db4e",
+                        "name": "other",
+                        "color": "red",
+                        "description": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Territory support": {
+            "id": "eBFb",
+            "name": "Territory support",
+            "type": "select",
+            "select": {
+                "options": [
+                    {
+                        "id": "vjxq",
+                        "name": "Partial support",
+                        "color": "yellow",
+                        "description": null
+                    },
+                    {
+                        "id": "\\GG~",
+                        "name": "Full support",
+                        "color": "blue",
+                        "description": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "type": {
+            "id": "eyJN",
+            "name": "type",
+            "type": "multi_select",
+            "multi_select": {
+                "options": [
+                    {
+                        "id": "naX{",
+                        "name": "Autonomous",
+                        "color": "pink",
+                        "description": null
+                    },
+                    {
+                        "id": "^RJa",
+                        "name": "NGO",
+                        "color": "red",
+                        "description": null
+                    },
+                    {
+                        "id": "X<Q^",
+                        "name": "Government",
+                        "color": "blue",
+                        "description": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "profile photo": {
+            "id": "kRC%3C",
+            "name": "profile photo",
+            "type": "url",
+            "url": {}
+        }
+    },
+    {
+        "Logo (url)": {
+            "id": "nE%3Ee",
+            "name": "Logo (url)",
+            "type": "url",
+            "url": {}
+        }
+    },
+    {
+        "Resources": {
+            "id": "sYEg",
+            "name": "Resources",
+            "type": "multi_select",
+            "multi_select": {
+                "options": [
+                    {
+                        "id": "PGgd",
+                        "name": "Funai support",
+                        "color": "brown",
+                        "description": null
+                    },
+                    {
+                        "id": "8f29226e-d3cb-4500-872e-ea91765159cb",
+                        "name": "Environmental compensation",
+                        "color": "green",
+                        "description": null
+                    },
+                    {
+                        "id": "19dc62ae-efde-4030-b156-b12ab7b73533",
+                        "name": "Private support",
+                        "color": "gray",
+                        "description": null
+                    },
+                    {
+                        "id": "3c1cd280-2386-4faf-9d3a-51ce182b4a03",
+                        "name": "NGO support",
+                        "color": "blue",
+                        "description": null
+                    },
+                    {
+                        "id": "f7df520e-7690-4c0e-a81a-b860685ea885",
+                        "name": "NGO programme",
+                        "color": "orange",
+                        "description": null
+                    },
+                    {
+                        "id": "b096cfc4-801f-4221-9799-8a76ab568a25",
+                        "name": "Self fundraising",
+                        "color": "pink",
+                        "description": null
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "Location": {
+            "id": "~egx",
+            "name": "Location",
+            "type": "rich_text",
+            "rich_text": {}
+        }
+    },
+    {
+        "Name": {
+            "id": "title",
+            "name": "Name",
+            "type": "title",
+            "title": {}
+        }
+    }
+]

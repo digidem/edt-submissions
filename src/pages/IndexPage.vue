@@ -4,6 +4,7 @@
       <SoftwareForm v-if="selection === 'tool'" class="row justify-center q-mx-sm"/>
       <HardwareForm v-if="selection === 'hardware'" class="row justify-center q-mx-sm"/>
       <GuidesForm v-if="selection === 'guides'" class="row justify-center q-mx-sm" :inputs="inputs"/>
+      <GroupsForm v-if="selection === 'groups'" class="row justify-center q-mx-sm"/>
   </q-page>
 </template>
 
@@ -11,36 +12,16 @@
 import { ref } from 'vue'
 import { api } from 'boot/axios'
 
-import SoftwareForm from 'components/SoftwareForm.vue'
-import HardwareForm from 'components/HardwareForm.vue'
-import GuidesForm from 'components/GuidesForm.vue'
+import SoftwareForm from 'src/components/SoftwareForm.vue'
+import GroupsForm from 'components/GroupsForm.vue'
+import HardwareForm from 'src/components/HardwareForm.vue'
+import GuidesForm from 'src/components/GuidesForm.vue'
 import SelectSubmission from 'components/SelectSubmission.vue'
 
 defineOptions({
   name: 'IndexPage'
 });
 
-const selection = ref('')
-
-// TODO: Update form to be created based on database properties
-    // This will save us having to manually make update properties and options
-    // But will also require a label => property matching function for custom form labels 
-
-    // Helper function for getting database properties
-      // (async () => {
-      //   const response = await api({
-      //     method: 'POST',
-      //     url: 'database',
-      //     headers: {
-      //       'Content-Type': 'application/json',
-      //     },
-      //     data: { database: import.meta.env.VITE_NOTION_GUIDES_DATABASE_ID }
-      //   });
-      //   const entries = Object.entries(response.data.data.properties).map(([name, value]) => {
-      //     return { [name]: value }
-      //   })
-      //   console.log({entries})
-      // })()
-
+const selection = ref('');
 
 </script>

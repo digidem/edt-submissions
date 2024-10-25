@@ -1,0 +1,324 @@
+{
+  "entries": [
+      {
+          "Easy to translate": {
+              "id": "EQka",
+              "name": "Easy to translate",
+              "type": "select",
+              "select": {
+                  "options": [
+                      {
+                          "id": "lE;l",
+                          "name": "⭐⭐⭐⭐⭐",
+                          "color": "green",
+                          "description": null
+                      },
+                      {
+                          "id": "|Ck>",
+                          "name": "⭐⭐⭐⭐",
+                          "color": "gray",
+                          "description": null
+                      },
+                      {
+                          "id": "IZIb",
+                          "name": "⭐⭐⭐",
+                          "color": "orange",
+                          "description": null
+                      },
+                      {
+                          "id": "su?d",
+                          "name": "⭐⭐",
+                          "color": "brown",
+                          "description": null
+                      },
+                      {
+                          "id": "e]Kd",
+                          "name": "⭐",
+                          "color": "default",
+                          "description": null
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "Authored by (Org/Community/Individual)": {
+              "id": "Hu%7D%3C",
+              "name": "Authored by (Org/Community/Individual)",
+              "type": "rich_text",
+              "rich_text": {}
+          }
+      },
+      {
+          "Date of publication": {
+              "id": "RVw%40",
+              "name": "Date of publication",
+              "type": "date",
+              "date": {}
+          }
+      },
+      {
+          "Categories": {
+              "id": "U%3DmA",
+              "name": "Categories",
+              "type": "multi_select",
+              "multi_select": {
+                  "options": [
+                      {
+                          "id": "Qa_F",
+                          "name": "Security",
+                          "color": "default",
+                          "description": null
+                      },
+                      {
+                          "id": "a_KE",
+                          "name": "Other",
+                          "color": "blue",
+                          "description": null
+                      },
+                      {
+                          "id": "d~Vv",
+                          "name": "Fundraising",
+                          "color": "orange",
+                          "description": null
+                      },
+                      {
+                          "id": "OQdi",
+                          "name": "Storytelling",
+                          "color": "default",
+                          "description": null
+                      },
+                      {
+                          "id": "^k]S",
+                          "name": "Language",
+                          "color": "gray",
+                          "description": null
+                      },
+                      {
+                          "id": "]k;h",
+                          "name": "Land",
+                          "color": "pink",
+                          "description": null
+                      },
+                      {
+                          "id": "qyIr",
+                          "name": "Governance",
+                          "color": "purple",
+                          "description": null
+                      },
+                      {
+                          "id": "kkRT",
+                          "name": "Culture",
+                          "color": "red",
+                          "description": null
+                      },
+                      {
+                          "id": "cmu}",
+                          "name": "Communications",
+                          "color": "brown",
+                          "description": null
+                      },
+                      {
+                          "id": "bMxi",
+                          "name": "Collaboration",
+                          "color": "green",
+                          "description": null
+                      },
+                      {
+                          "id": "TR@\\",
+                          "name": "Accounting",
+                          "color": "yellow",
+                          "description": null
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "Languages": {
+              "id": "X%3C%5CT",
+              "name": "Languages",
+              "type": "multi_select",
+              "multi_select": {
+                  "options": []
+              }
+          }
+      },
+      {
+          "Links": {
+              "id": "_TSe",
+              "name": "Links",
+              "type": "url",
+              "url": {}
+          }
+      },
+      {
+          "Status": {
+              "id": "df%60g",
+              "name": "Status",
+              "type": "status",
+              "status": {
+                  "options": [
+                      {
+                          "id": "f3cf270d-9de4-4a25-ab48-e53b02376a40",
+                          "name": "Submitted",
+                          "color": "yellow",
+                          "description": null
+                      },
+                      {
+                          "id": "P~Wj",
+                          "name": "Requires more info",
+                          "color": "purple",
+                          "description": null
+                      },
+                      {
+                          "id": "213a1f34-67c9-4773-ad1b-d014d18f9125",
+                          "name": "In review",
+                          "color": "blue",
+                          "description": null
+                      },
+                      {
+                          "id": "=v~>",
+                          "name": "Declined",
+                          "color": "red",
+                          "description": null
+                      },
+                      {
+                          "id": "93748153-57c7-433b-bbae-5403a2e25d0c",
+                          "name": "Approved",
+                          "color": "green",
+                          "description": null
+                      }
+                  ],
+                  "groups": [
+                      {
+                          "id": "36db4caf-475f-4e11-b992-14599559779f",
+                          "name": "To-do",
+                          "color": "gray",
+                          "option_ids": [
+                              "f3cf270d-9de4-4a25-ab48-e53b02376a40"
+                          ]
+                      },
+                      {
+                          "id": "05c9303c-9d6c-4c72-bf49-82702f717369",
+                          "name": "In progress",
+                          "color": "blue",
+                          "option_ids": [
+                              "P~Wj",
+                              "213a1f34-67c9-4773-ad1b-d014d18f9125"
+                          ]
+                      },
+                      {
+                          "id": "8e4e2626-e92e-433e-8a69-05c66326f646",
+                          "name": "Complete",
+                          "color": "green",
+                          "option_ids": [
+                              "=v~>",
+                              "93748153-57c7-433b-bbae-5403a2e25d0c"
+                          ]
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "Description": {
+              "id": "fITW",
+              "name": "Description",
+              "type": "rich_text",
+              "rich_text": {}
+          }
+      },
+      {
+          "More info": {
+              "id": "p%5BI%3B",
+              "name": "More info",
+              "type": "rich_text",
+              "rich_text": {}
+          }
+      },
+      {
+          "Suggested by email": {
+              "id": "p%5DMK",
+              "name": "Suggested by email",
+              "type": "rich_text",
+              "rich_text": {}
+          }
+      },
+      {
+          "Type": {
+              "id": "xDRV",
+              "name": "Type",
+              "type": "multi_select",
+              "multi_select": {
+                  "options": [
+                      {
+                          "id": "65c1efe0-e944-4f28-aae1-e833fc8447c9",
+                          "name": "Guide",
+                          "color": "blue",
+                          "description": null
+                      },
+                      {
+                          "id": "c4b97bf8-153b-42a4-bd5c-bc0c7e08caf7",
+                          "name": "Community case study",
+                          "color": "gray",
+                          "description": null
+                      },
+                      {
+                          "id": "ba789c8b-2fd3-4340-9044-86dd3078fbf4",
+                          "name": "Documentation",
+                          "color": "yellow",
+                          "description": null
+                      },
+                      {
+                          "id": "ce00277c-e683-4094-8f88-48099d8c3917",
+                          "name": "Tutorial",
+                          "color": "green",
+                          "description": null
+                      },
+                      {
+                          "id": "375d5012-579d-4e02-b2d7-665d2a37071b",
+                          "name": "Guidelines",
+                          "color": "purple",
+                          "description": null
+                      },
+                      {
+                          "id": "49d69ea8-f941-4ac5-aa16-1bb958f70ec8",
+                          "name": "Checklist",
+                          "color": "red",
+                          "description": null
+                      },
+                      {
+                          "id": "82d00db9-ccb8-4f0b-a233-7e79fc02b1d7",
+                          "name": "FAQ",
+                          "color": "orange",
+                          "description": null
+                      },
+                      {
+                          "id": "4bf9a7fd-7dbb-4be3-aefc-0188d627bc1b",
+                          "name": "Other",
+                          "color": "brown",
+                          "description": null
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "Suggested by": {
+              "id": "%7B%5DSJ",
+              "name": "Suggested by",
+              "type": "rich_text",
+              "rich_text": {}
+          }
+      },
+      {
+          "Name": {
+              "id": "title",
+              "name": "Name",
+              "type": "title",
+              "title": {}
+          }
+      }
+  ]
+}

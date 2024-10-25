@@ -9,7 +9,10 @@ import axios from 'axios'
 // for each client)
 // const url = window.location.origin.split(':').slice(0,2).join(':')
 // console.log(url)
-const api = axios.create({ baseURL: 'http://localhost:3000/'})
+const api = axios.create({ baseURL: process.env.NODE_ENV === 'production' 
+  ? `${window.location.origin}/` 
+  : 'http://localhost:3000/'
+})
 
 
 export default boot(({ app }) => {

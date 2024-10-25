@@ -29,8 +29,8 @@ const data = defineModel()
 const options = [
   { label: 'Tool', value: 'tool', image: softwareImage },
   { label: 'Hardware', value: 'hardware', image: hardwareImage },
-  { label: 'Guides', value: 'guides', image: guidesImage },
-  { label: 'Groups', value: 'groups', image: groupsImage }
+  { label: 'Guides', value: 'guide', image: guidesImage },
+  { label: 'Groups', value: 'group', image: groupsImage }
 ]
 
 function selectOption (input) {

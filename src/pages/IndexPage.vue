@@ -3,8 +3,8 @@
       <SelectSubmission class="row justify-center" v-model="selection"/>
       <SoftwareForm v-if="selection === 'tool'" class="row justify-center q-mx-sm"/>
       <HardwareForm v-if="selection === 'hardware'" class="row justify-center q-mx-sm"/>
-      <GuidesForm v-if="selection === 'guides'" class="row justify-center q-mx-sm" :inputs="inputs"/>
-      <GroupsForm v-if="selection === 'groups'" class="row justify-center q-mx-sm"/>
+      <GuidesForm v-if="selection === 'guide'" class="row justify-center q-mx-sm" :inputs="inputs"/>
+      <GroupsForm v-if="selection === 'group'" class="row justify-center q-mx-sm"/>
   </q-page>
 </template>
 

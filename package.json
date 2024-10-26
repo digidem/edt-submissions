@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Online form for new submissions to the EDT notion database.",
   "main": "server.js",
+
+  
   "scripts": {
     "start": "node server.js"
   },

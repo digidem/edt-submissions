@@ -9,18 +9,19 @@ const app = express()
 
 const { Client } = require("@notionhq/client")
 const notion = new Client({ auth: process.env.NOTION_KEY })
-// const toolDatabase = process.env.NOTION_DATABASE_ID
-// const resourceDatabase = process.env.NOTION_DATABASE_ID
-// const hardwareDatabase = process.env.NOTION_DATABASE_ID
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(serveStatic("public"))
 app.use(express.json()) // for parsing application/json
 app.use(cors())
 
+console.log('starting server')
+console.log('starting notion client: ', notion)
+
 // Get database properties
 app.post("/database", async function (request, response) {
   response.set('Access-Control-Allow-Origin','*')
+  console.log('getting DB')
 
   try {
     const database = await notion.databases.retrieve({ database_id: request.body.database });

@@ -13,6 +13,7 @@ const api = axios.create({ baseURL: process.env.NODE_ENV === 'production'
   ? `${window.location.origin}/` 
   : 'http://localhost:3000/'
 })
+console.log("baseURL", api.defaults.baseURL)
 
 
 export default boot(({ app }) => {
